@@ -1,13 +1,39 @@
 <html>
   <head>
-    <title>bhanucarrer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>{{company_name}}carrer</title>
+    <style>
+      #untitled {
+        width: 100%;
+        height : 350px;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
-    <h1>carrer website</h1>
-    <img src = "https://8d59846d-0d22-46ed-bdb2-cfb6aa97a1b4-00-22066j7zcl0sk.pike.replit.dev/static/Untitled.jpeg">
-    <h2>about carrer web</h2>
-
-    <p> </p>
-    <h3>This is the website of sample</h3>
+    <div class="container">
+        <h1 class="text-center mt-3 mb-4">carrer website</h1>
+        <img class='img-fluid '  id = 'untitled' src = "https://8d59846d-0d22-46ed-bdb2-cfb6aa97a1b4-00-22066j7zcl0sk.pike.replit.dev/static/Untitled.jpeg" >
+        <h2 class="text-center">about carrer web</h2>
+    
+        <p class ="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+        <h2 class="text-center">opening positions</h2>
+        <p>
+          {% for job in jobs %}
+          <div><h2>{{job['title']}}</h2></div>
+          <div> <b>Location:</b>{{job["location"]}}</div>
+          
+      
+          
+          {%endfor%}
+        </p>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg" >contact us</button>
+        <p>copyrights</p>
+      </div>
+      </div>
   </body>
 </html>
