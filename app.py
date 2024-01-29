@@ -6,7 +6,7 @@ JOBS=[
   {'id':2,'title':'Data Analyst','location':'Bengaluru, India','salary':'Rs. 12,00,000'},
   {'id':3,'title':'Data Analyst','location':'Channai','salary':'Rs. 13,00,000'},
   {'id':4,'title':'Data Analyst','location':'Remote','salary':'Rs. 10,00,000'},
-  {'id':5,'title':'Data Analyst','location':'Bengaluru, India','salary':'Rs. 9,00,000'}]
+  {'id':5,'title':'Data Analyst','location':'Bengaluru, India'}]
 
 @app.route('/')
 def name():
