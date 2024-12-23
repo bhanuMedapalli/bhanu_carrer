@@ -17,7 +17,7 @@ def name():
 @app.route('/api/jobs')
 def list_jobs():
   return jsonify(JOBS)
-
+# this shows that main files by using spacial charecter __name__
 
   
 if __name__ == "__main__":
